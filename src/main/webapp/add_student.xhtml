@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+	<h:form>
+
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><h:inputText value="#{student.name}" /></td>
+			</tr>
+			<tr>
+				<td>Date Of Birth</td>
+				<td><h:inputText value="#{student.dateOfBirth}" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><h:inputText value="#{student.email}" /></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><h:inputText value="#{student.phoneNumber}" /></td>
+			</tr>
+			<tr>
+				<td>Join Date</td>
+				<td><h:inputText value="#{student.joinDate}" /></td>
+			</tr>
+			<tr>
+				<td><h:commandButton
+						action="#{studentService.addStudent(student)}" value="Add Student" /></td>
+			</tr>
+		</table>
+	</h:form>
+</body>
+</html>
